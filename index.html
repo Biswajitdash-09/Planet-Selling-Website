@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet Selling Website</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-weight: bold;
+            color: white;
+        }
+
+        body {
+            font-family: "Montserrat Subrayada", serif;
+            background-color: #2c2c2c;
+        }
+
+        header {
+            height: 70px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-bottom: 1px solid black;
+        }
+
+        ul {
+            display: flex;
+            list-style-type: none;
+        }
+
+        ul li a {
+            margin: 0 5px;
+            border: 2px solid white;
+            padding: 0px 10px;
+            text-decoration: none;
+            border-radius: 50px;
+        }
+
+        .logo {
+            border: 2px solid white;
+            padding: 10px 5px;
+        }
+
+        .signUp {
+            background-color: white;
+            color: black;
+        }
+
+        .signUp:hover {
+            background-color: black;
+            color: white;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+        }
+
+        .planet-section {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 80%;
+            margin: 50px 0;
+            flex-wrap: wrap;
+            border-bottom: 2px solid white;
+            padding-bottom: 50px;
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .content h2 {
+            font-size: 30px;
+            text-transform: uppercase;
+        }
+
+        .content p {
+            font-size: 14px;
+            font-weight: 200;
+            line-height: 30px;
+            margin: 30px 0;
+        }
+
+        .planet-image {
+            max-width: 300px;
+            height: auto;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            background: white;
+            outline: none;
+            border: none;
+            color: black;
+            text-transform: uppercase;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://files.oaiusercontent.com/file-V6x5msC6CMd4DgYCnqtVba?se=2025-02-21T15%3A41%3A07Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Dbed2b754-7e31-4ce1-8a0e-105bf5d01ba4.webp&sig=vngu9HOqsaZ3tYU%2BrGbeynEMJ1pBHmkPb9IL1z6y2/8%3D"
+                alt="Logo" width="50">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">BUY NOW</a></li>
+                <li><a href="#">SELL NOW</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#" class="signUp">SIGN UP</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Mercury -->
+        <section class="planet-section">
+            <div class="content">
+                <h2>Mercury</h2>
+                <p>Mercury is the smallest planet and closest to the Sun. It has no atmosphere, no moons, and is covered
+                    in craters.</p>
+                <button class="btn">BUY NOW</button>
+            </div>
+            <img src="https://space-facts.com/wp-content/uploads/mercury-transparent.png" alt="Mercury"
+                class="planet-image">
+        </section>
+
+        <!-- Venus -->
+        <section class="planet-section">
+            <div class="content">
+                <h2>Venus</h2>
+                <p>Venus has a thick atmosphere of carbon dioxide, making it the hottest planet. It rotates in the
+                    opposite direction to most planets.</p>
+                <button class="btn">BUY NOW</button>
+            </div>
+            <img src="https://space-facts.com/wp-content/uploads/venus-transparent.png" alt="Venus"
+                class="planet-image">
+        </section>
+
+        <!-- Earth -->
+        <section class="planet-section">
+            <div class="content">
+                <h2>Earth</h2>
+                <p>Earth is the only planet known to support life, with vast oceans, an oxygen-rich atmosphere, and a
+                    diverse ecosystem.</p>
+                <button class="btn">BUY NOW</button>
+            </div>
+            <img src="https://space-facts.com/wp-content/uploads/earth-transparent.png" alt="Earth"
+                class="planet-image">
+        </section>
+
+        <!-- Mars -->
+        <section class="planet-section">
+            <div class="content">
+                <h2>Mars</h2>
+                <p>Mars, the Red Planet, has the largest volcano in the solar system and signs of ancient water sources.
+                </p>
+                <button class="btn">BUY NOW</button>
+            </div>
+            <img src="https://space-facts.com/wp-content/uploads/mars-transparent.png" alt="Mars" class="planet-image">
+        </section>
+
+        <!-- Jupiter -->
+        <section class="planet-section">
+            <div class="content">
+                <h2>Jupiter</h2>
+                <p>Jupiter is the largest planet, with a massive storm called the Great Red Spot and at least 79 known
+                    moons.</p>
+                <button class="btn">BUY NOW</button>
+            </div>
+            <img src="https://space-facts.com/wp-content/uploads/jupiter-transparent.png" alt="Jupiter"
+                class="planet-image">
+        </section>
+
+        <!-- Saturn -->
+        <section class="planet-section">
+            <div class="content">
+                <h2>Saturn</h2>
+                <p>Saturn is known for its stunning ring system made of ice and rock. It has at least 83 moons.</p>
+                <button class="btn">BUY NOW</button>
+            </div>
+            <img src="https://space-facts.com/wp-content/uploads/saturn-transparent.png" alt="Saturn"
+                class="planet-image">
+        </section>
+
+        <!-- Uranus -->
+        <section class="planet-section">
+            <div class="content">
+                <h2>Uranus</h2>
+                <p>Uranus rotates on its side and has a pale blue-green color due to methane in its atmosphere.</p>
+                <button class="btn">BUY NOW</button>
+            </div>
+            <img src="https://space-facts.com/wp-content/uploads/uranus-transparent.png" alt="Uranus"
+                class="planet-image">
+        </section>
+
+        <!-- Neptune -->
+        <section class="planet-section">
+            <div class="content">
+                <h2>Neptune</h2>
+                <p>Neptune is the farthest planet from the Sun, with supersonic winds and a deep blue appearance.</p>
+                <button class="btn">BUY NOW</button>
+            </div>
+            <img src="https://space-facts.com/wp-content/uploads/neptune-transparent.png" alt="Neptune"
+                class="planet-image">
+        </section>
+    </main>
+</body>
+
+</html>
